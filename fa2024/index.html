@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+    <meta property="og:site_name" content="EN.601.770 (AI Ethics and Social Impact)">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="EN.601.770 (AI Ethics and Social Impact)">
+    <meta property="og:description" content="Course on the latest research in AI ethics and Social Impact">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EN.601.770: AI Ethics and Social Impact">
+    <!-- meta name="twitter:description" content="Discussing latest breakthroughs in self-supervised language models" -->
+    <!-- meta name="twitter:url" content="https://self-supervised.cs.jhu.edu/" -->
+
+    <title>601.770: AI Ethics and Social Impact </title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../files/bootstrap.min.css">
+
+    <!-- Google fonts -->
+    <link href="../files/fonts.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="../files/style.css">
+    <link rel="stylesheet" href="../files/font-awesome.min.css">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="../files/favicon.ico"/>
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1063.0" data-gr-ext-installed="">
+
+<!-- <script src="header.js"></script> -->
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand brand" href="index.html">601.770</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#intro">Overview</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="#conduct">Policies</a></li>
+                <!-- li><a href="https://github.com/JHU-CLSP/csci-601-771-self-supervised-models">Edit this page!</a></li -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<div id="header" style="text-align:center">
+    <!--    <img src="files/blank.png" class="logo-left">-->
+    <a href="https://www.cs.jhu.edu/">
+        <img src="../files/jhu_shield.png" class="logo-right">
+    </a>
+<!--    <a href="https://www.clsp.jhu.edu/">-->
+<!--        <img src="files/clsp-logo.png" class="logo-right">-->
+<!--    </a>-->
+    <h1>601.770: AI Ethics and Social Impact</h1>
+    <h3>Johns Hopkins University - Fall 2023</h3>
+    <div style="clear:both;"></div>
+</div>
+
+<!-- Intro -->
+<div class="container sec" id="intro">
+    <p>
+        AI is poised to have an enormous impact on society. What should that impact be and who should get to decide it?
+        The goal of this course is to critically examine AI research and deployment pipelines, with in-depth examinations 
+        of how we need to understand social structures to understand impact.
+        In application domains, we will examine questions like “who are key stakeholders?”, “who is affected by this technology?”
+        and “who benefits from this technology?”. We will also conversely examine: how can AI help us learn about these domains,
+        and can we build from this knowledge to design AI for "social good"? As a graduate-level course, topics will focus on current
+        research including development and deployment of technologies like large language models and decision support tools, and
+        students will conduct a final research project.
+    </p>
+
+    <p>
+        <strong>Prerequisites</strong>:
+        At least one graduate-level computer science course in Artificial Intelligence or Machine Learning
+        (including NLP, Computer Vision, etc.), two preferred, or permission of the instructor.
+        Students must be comfortable with reading recent research papers and discussing key concepts and ideas.
+    </p>
+
+</div>
+
+<!-- Staff Info -->
+<div class="sechighlight">
+    <div class="container sec" id="people">
+        <div class="col-md-5" style="width: 100%; text-align: center">
+            <h3>Instructors</h3>
+            <div class="instructor">
+                <a target="_blank" rel="noopener noreferrer" href="https://anjalief.github.io/">
+                <!--    <div class="instructorphoto"><img src="files/daniel.jpeg" alt="missing image"></div> -->
+                    <div>Anjalie Field</div>
+                </a>
+            </div>
+            <div class="instructor">
+                <a target="_blank" rel="noopener noreferrer" href="?">
+                <!--    <div class="instructorphoto"><img src="files/blank.png" alt="missing image"></div> -->
+                    <div>Iliana Maifeld-Carucci <br>(Teaching Assistant)</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logistics -->
+    <div class="container sec" id="logistics">
+        <ul>
+            <li><b>Classes:</b> on Tuesday/Thursday 12:00 - 1:15 pm EST (Malone 228)</li>
+            <li><b>Office hours:</b>
+                Anjalie: Tuesday 2-3pm Malone 333</li>
+            <li><b>Class Structure</b>: The class will be in-person. Each session will primarily involve small-group discussions 
+                of recent or highly impactful papers on AI ethics. Students will also complete a course project
+            </li>
+            <li><b>Piazza</b>: Please join the class Piazza <a href="https://piazza.com/jhu/fall2023/601770">here</a>
+            </li>
+            <li><b>Coursework:</b>
+            <ul>
+                <li>Readings (2 short papers or 1 long paper) for each class period</li>
+                <li>A short (2-paragraph) written response the readings to be posted on Piazza by 5pm the day before class. These responses
+                    should not summarize the reading, but instead raise questions that would be appropriate for discussion,
+                    or propose ideas to think about</li>
+                <li> Participation in discussion; a large component of this course will be in-class discussion groups. Everyone will be a
+                    discussion leader several times over the semester in their discussion groups. Discussion leaders should have read all
+                    the response paragraphs and prepared to organize the discussion in their group, and synthesize for reporting back to the
+                    whole class.
+                </li>
+                <li>A final project (in groups). This can be a computational paper (describing a new system you built, or a replication 
+                    of someone else's published work, a theoretical result, etc.), an analytic paper, a position paper, etc.
+                    See <a href="project.html">Project</a> for details </li>
+            </ul>
+
+            <li><b>Grading:</b>
+                <ul>
+                    <li> Reading responses (15%)</li>
+                    <li> Class participation (25%) </li>
+                    <li> Project literature review (15%) </li>
+                    <li> Project written proposal and presentation (15%) </li>
+                    <li> Project Final Presentation and Paper (25%) </li>
+                    <li> Course goals and midterm feedback responses (5%) </li>
+                </ul>
+            <li><b>Attendance policy:</b>
+                This is a graduate-level course revolving around in-person discussion. Students are expected to attend class and may
+                notify instructors if there are extenuating circumstances.
+            </li>
+        </ul>
+        <b>Acknowledgements</b>
+            Thank you to Dan Jurafsky for sharing course materials and to Daniel Khashabi for sharing the course website template!
+        </li>
+
+        <br>
+    </div>
+</div>
+
+<div class="container sec" id="schedule" style="margin-top:-20px">
+    <br>
+    <h2>Schedule</h2>
+    <p> The current class schedule is below. The schedule is subject to change, particularly the specific readings: </p>
+
+    <table class="table">
+        <colgroup>
+            <col style="width:10%">
+            <col style="width:18%">
+            <col style="width:60%">
+            <col style="width:25%">
+
+        </colgroup>
+        <thead>
+        <tr class="active">
+            <th>Date</th>
+            <th>Topic</th>
+            <th>Readings</th>
+            <th>Work Due</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Tue Aug 29</td>
+            <td>Course overview, plan and expectations [<a href="files/0828.CourseIntro.pdf">relevant slides</a>]</td>
+        </tr>
+        <tr>
+            <td>Thu Aug 31</td>
+            <td>Origins and Data: Research ethics and data privacy</td>
+            <td>
+                <ol>
+
+                    <li><a href="https://www.hhs.gov/ohrp/sites/default/files/the-belmont-report-508c_FINAL.pdf"> The Belmont Report</a></li>
+                    <li><a href="https://journals.sagepub.com/doi/10.1177/2378023118813023">Lundberg, Ian, et al. "Privacy, ethics, and data access: A case study of the Fragile Families Challenge." Socius 5 (2019)</a></li>
+               </ol>
+            </td>
+            <td>Reading Responses by 5pm Wednesday</td>
+        </tr>
+        <tr>
+            <td>Tue Sept 5</td>
+            <td>Origins and Data: Ownership [<a href="files/0831DataFacialRecognition.pdf">relevant slides</a>]</td>
+            <td>
+
+                <ol>
+                    <li><a href="https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf">Buolamwini, Joy, and Timnit Gebru. "Gender shades: Intersectional accuracy disparities in commercial gender classification." FAccT. PMLR, 2018</a></li>
+                    <li><a href="https://www.nbcnews.com/tech/internet/facial-recognition-s-dirty-little-secret-millions-online-photos-scraped-n981921">"Facial recognition's 'dirty little secret': Millions of online photos scraped without consent", NBC article</a></li>
+                    <li><a href="https://www.nytimes.com/2021/06/29/science/indigenous-data-microbiome-science.html">Training the Next Generation of Indigenous Data Scientists", NYT article</a> [available via JHU login <a href="https://www.proquest.com/docview/2557916955/9D15DB58A04442E5PQ/1?accountid=11752">here</a></a>] </li>
+                    <!-- <li><a href="https://www.classaction.org/news/class-action-accuses-ibm-of-flagrant-violations-of-illinois-biometric-privacy-law-to-develop-facial-recognition-tech">"Class Action Accuses IBM of ‘Flagrant Violations’ of Illinois Biometric Privacy Law to Develop Facial Recognition Tech", Class Action Newswire</a></li> -->
+                </ol>
+            </td>
+            <td>Reading Responses by 9:30am Monday</td>
+        </tr>
+        <tr>
+            <td>Thu Sept 7</td>
+            <td>Origins and Data: Crowdsourcing [<a href="files/0970.CrowdSourcingFairness.pdf">relevant slides</a>]</td>
+            <td>
+                <ol>
+                <li> <a href="https://aclanthology.org/2021.naacl-main.295/"> Boaz Shmueli, Jan Fell, Soumya Ray, and Lun-Wei Ku. 2021. Beyond Fair Pay: Ethical Implications of NLP Crowdsourcing. In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 3758–3769, Online. Association for Computational Linguistics. </a>
+                </li>
+                <li> <a href="https://time.com/6247678/openai-chatgpt-kenya-workers/">"Exclusive: OpenAI Used Kenyan Workers on Less Than $2 Per Hour to Make ChatGPT Less Toxic", Time</a> </li>
+                <li> (optional) <a href="https://www.computerweekly.com/news/366546273/AI-interview-Krystal-Kauffman-lead-organiser-Turkopticon">"AI interview: Krystal Kauffman, lead organiser, Turkopticon", Computer Weekly</a></li>
+                </ol>
+            </td>
+          <td>Course Goals Sheet (email to instructors) by class Thursday, Reading Responses by 5pm Wednesday</td>
+        </tr>
+
+        <tr>
+            <td>Tue Sept 12</td>
+            <td>Fairness, Bias and Stereotypes: Fairness metrics [<a href="files/0912.Bias.pdf">relevant slides</a>]</td>
+            <td>
+                <ol>
+                    <li> <a href="https://dl.acm.org/doi/10.1145/2090236.2090255">Dwork, Cynthia, et al. "Fairness through awareness." Proceedings of the 3rd innovations in theoretical computer science conference. 2012.</a></li>
+                    <li><a href="https://www.andrew.cmu.edu/user/achoulde/files/disparate_impact.pdf">Chouldechova, Alexandra. "Fair prediction with disparate impact: A study of bias in recidivism prediction instruments", Big Data, Special issue on Social and Technical Trade-Offs. 2017.  </a> </li> 
+                    <li>(optional)<a href="https://dl.acm.org/doi/10.1145/3097983.3098095"> Corbe-Davies, Sam et al. "Algorithmic Decision Making and the Cost of Fairness", KDD. 2017. </a></li>
+                    <li>(optional)<a href="https://dl.acm.org/doi/10.1145/3457607"> Mehrabi, Ninareh et al. "A Survey on Bias and Fairness in Machine Learning", ACM Computing Surveys. 2021. </a></li>
+               </ol>
+            </td>
+            <td>Reading Responses by 9am</td>
+
+        </tr>
+
+        <tr>
+            <td>Thu Sept 14</td>
+            <td>Fairness, Bias and Stereotypes: Classification/Prediction [<a href="files/0914.ClassificationProjects.pdf">relevant slides</a>]</td>
+            <td>
+                <ol>
+                    <li> <a href="https://aclanthology.org/D17-1323/"> Zhao et al. "Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints", EMNLP. 2017.</a></li>
+                    <li> <a href="https://aclanthology.org/P19-1163/"> Sap et al. "The Risk of Racial Bias in Hate Speech Detection", ACL. 2019. </a> </li>
+                    <li> (optional) <a href="https://dl.acm.org/doi/10.1145/3593013.3594094"a> Field et al. "Examining risks of racial biases in NLP tools for child protective services" FAccT. 2023.</a> </li>
+                </ol>
+            </td>
+            <td>Reading Responses by 9am</td>
+        </tr>
+
+        <tr>
+            <td>Tue Sept 19</td>
+            <td>Fairness, Bias and Stereotypes: Generation</td>
+            <td>
+                <ol>
+                    <li><a href="https://aclanthology.org/2023.acl-long.84">Myra Cheng, Esin Durmus, and Dan Jurafsky. Marked Personas: Using Natural Language Prompts to Measure Stereotypes in Language Models. ACL 2023.</a></li>
+                    <li><a href="https://dl.acm.org/doi/abs/10.1145/3593013.3594095">Bianchi, Federico, et al. "Easily accessible text-to-image generation amplifies demographic stereotypes at large scale." FAccT 2023. </a></li>
+                </ol>
+            </td>
+            <td>Reading Responses by 9am</td>
+        </tr>
+
+        <tr>
+            <td>Thu Sept 21</td>
+            <td>Research Codes of ethics</td>
+            <td>
+            <ol>
+                <li> The code of ethics from at least 2 publication venues: <a href="https://neurips.cc/public/EthicsGuidelines">NeuRIPS</a>, <a href="https://www.acm.org/code-of-ethics">ACM</a> (also adopted by ACL). You may choose
+                a code of ethics from a different conference, in which case please link it in your Piazza post</li>
+                <li> <a href="https://aclanthology.org/2020.acl-main.261/">Kobi Leins, Jey Han Lau, and Timothy Baldwin. "Give Me Convenience and Give Her Death: Who Should Decide What Uses of NLP are Appropriate, and on What Basis?". ACL. 2020.</a></li>
+            </ol>
+            </td>
+            <td>Reading Responses by 9am</td>
+        </tr>
+
+        <tr>
+            <td>Tue Sept 26</td>
+            <td>Privacy in Generative AI</td>
+            <td>
+                <ol>
+                    <li><a href="https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf">Carlini, Nicolas, et al. "Extracting training data from diffusion models." 32nd USENIX Security Symposium (USENIX Security 23). 2023.</a> </li>
+                    <li> <a href="https://dl.acm.org/doi/fullHtml/10.1145/3531146.3534642">Hannah Brown, Katherine Lee, Fatemehsadat Mireshghalla, Reza Shokri, Florian Tramèr. "What Does it Mean for a Language Model to Preserve Privacy?" FAccT 2022.</a></li>
+                </ol>
+            </td>
+            <td>Reading Responses by 9am</td>
+        </tr>
+
+
+        <tr>
+            <td>Thu Sept 28</td>
+            <td>Environmental Impact</td>
+            <td>
+                [No required readings]
+            </td>
+            <td>Project Literature Review (11:59pm on Friday 9/29)</td>
+        </tr>
+
+
+        <tr>
+            <td>Tue Oct 3</td>
+            <td>Values and design: Value sensitive design</td>
+            <td>
+                <ol>
+                    <li>
+                        <a href="https://link.springer.com/chapter/10.1007/978-94-007-7844-3_4">Friedman, Batya, et al. "Value sensitive design and information systems." Early engagement and new technologies: Opening up the laboratory (2013): 55-95.</a>
+                    </li>
+                    <li>
+                        <a href="https://link.springer.com/article/10.1007/s43681-021-00038-3">Umbrello, Steven, and Ibo Van de Poel. "Mapping value sensitive design onto AI for social good principles." AI and Ethics 1.3 2021.</a>
+                    </li>
+
+                </ol>
+            </td>
+            <td>Reading Responses by 9am</td>
+        </tr>
+
+
+        <tr>
+            <td>Thu Oct 5</td>
+            <td>Values and design: Participatory design</td>
+            <td>
+                <ol>
+                    <li>
+                        <a href="https://doi.org/10.1145/3351095.3372874">Katell et al. Toward situated interventions for algorithmic equity: lessons from the field. FAccT. 2020. </a>
+                    </li>
+                    <li>
+                        <a href="https://dl.acm.org/doi/10.1145/3551624.3555285">Sloane et al. Participation is not a Design Fix for Machine Learning. EAAMO 2022.</a>
+                    </li>
+                </ol>
+                
+            </td>
+            <td>Reading Responses by 9am</td>
+        </tr>
+
+
+        <tr>
+            <td>Tue Oct 10</td>
+            <td>Values and design: Surveyed Values</td>
+            <td>
+            <ol>
+                <li>
+                    <a href="https://doi.org/10.1145/3531146.3533083">Birhane et al. The Values Encoded in Machine Learning Research. FAccT 2022.</a>
+                </li>
+                <li>
+                    <a href="https://doi.org/10.1145/3593013.3594012">Widder et al. It’s about power: What ethical concerns do software engineers have, and what do they (feel they can) do about them? FAccT 2023.</a>
+                </li>
+            </ol>
+            </td>
+            <td>Reading Responses by 9am</td>
+        </tr>
+
+        <tr>
+            <td>Thu Oct 12</td>
+            <td>Policy and Regulation</td>
+            <td>
+                <ol>
+                    <li><a href="https://www.nature.com/articles/d41586-023-02491-y">Hutson, Matthew "Rules to keep AI in check: nations carve different paths for tech regulation", Nature news feature 2023.</a></li>
+                    <li><a href="https://www.whitehouse.gov/ostp/ai-bill-of-rights/">"Blueprint for an AI Bill of Rights", OSTP, 2023</a></li>
+                    <li><a href="https://time.com/6304831/china-ai-regulations/">Sarah Zheng and Jane Zhang "China Wants to Regulate Its Artificial Intelligence Sector Without Crushing It", Time Magazine, 2023</a></li>
+
+                </ol>
+                
+            </td>
+        </tr>
+
+        <tr>
+            <td>Tue Oct 17</td>
+            <td>Project Presentations</td>
+            <td>
+            </td>
+            <td>[Prepare for proposal presentations] </td>
+        </tr>
+
+        <tr>
+            <td>Thu Oct 19</td>
+            <td>Fall Break</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Tue Oct 24</td>
+            <td>Social Impact: Defining AI for Good</td>
+            <td>
+                <ol>
+                    <li><a href="https://doi.org/10.1145/3351095.3372871">Rediet Abebe, Solon Barocas, Jon Kleinberg, Karen Levy, Manish Raghavan, and David G. Robinson, "Roles for computing in social change" FAccT 2020.</a></li>
+                    <li><a href="https://www.benzevgreen.com/wp-content/uploads/2019/11/19-ai4sg.pdf">Ben Green, "'Good' isn’t good enough", AI for Social Good workshop at NeurIPS, 2019.</a> </li>
+                </ol>
+            <td>
+                Reading Responses by 9am
+            </td>
+        </tr>
+
+        <tr>
+            <td>Thu Oct 26</td>
+            <td>Trustworthy AI</td>
+            <td>
+            </td>
+            <td>
+                Project proposals due at 11:59pm
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Tue Oct 31</td>
+            <td>Social Impact: Child Welfare</td>
+            <td>
+                <ol>
+                    <li><a href="https://dl.acm.org/doi/10.1145/3290605.3300271">Brown, et al. 2019. Toward Algorithmic Accountability in Public Services: A Qualitative Study of Affected Community Perspectives on Algorithmic Decision-making in Child Welfare Services. CHI 2019.
+                    </a> </li>
+                    <li><a href="https://dl.acm.org/doi/10.1145/3616473">Devansh Saxena, Shion Guha. Algorithmic Harms in Child Welfare: Uncertainties in Practice, Organization, and Street-level Decision-Making. ACM Journal on Responsible Computing 2023.</a> [Abstract; Sections 1, 4-7; can skip or skim other sections] <a href="https://static1.squarespace.com/static/5dce0b39788bf4243921b9c1/t/64da35ac1f421224eed3892d/1692022189956/Saxena+ACM_JRC_2023.pdf">[link without the "Just Accepted" watermark]</a></li>
+                </ol>
+            </td>
+            <td>Reading Responses by 9am</td>
+        </tr>
+
+        <tr>
+            <td>Thu Nov 2</td>
+            <td>AI and Power, with guest <a href="https://riakalluri.com/">Ria Kalluri</a></td>
+            <td>
+                <ol>
+                <li><a href="https://www.jstor.org/stable/20024652?typeAccessWorkflow=login">Langdon Winner, "Do Artifacts Have Politics?", Daedalus, 1980.</a></li>
+                </ol>
+            </td>
+            <td>
+                Reading Responses by 9am (1 paragraph is ok since it's 1 reading)
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Tue Nov 7</td>
+            </td>
+            <td>Social Impact: Criminal Justice</td>
+            <td>
+                <ol>
+                    <li><a href="https://dl.acm.org/doi/10.1145/3593013.3593999">Dasha Pruss. Ghosting the Machine: Judicial Resistance to a Recidivism Risk
+                        Assessment Instrument. FAccT 2023. </a></li>
+                    <li><a href="https://thelittledataset.com/about_files/albright_judge_score.pdf">Alex Albright. If You Give a Judge a Risk Score: Evidence from Kentucky Bail Decisions. 2019</a> [Only need to read the Abstract and Introduction]</li>
+                </ol>
+            </td>
+            <td>Responses by 9am</td>
+        </tr>
+
+        <tr>
+            <td>Thu Nov 9</td>
+            <td>AI Policy Guest <a href="https://www.peterhenderson.co/">Peter Henderson</a></td>
+            <td>
+                <ol>
+                <li><a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/">White House Executive Order. 2023</a>
+                    There's a formatted version available <a href="https://docs.google.com/document/d/1u-MUpA7TLO4rnrhE2rceMSjqZK2vN9ltJJ38Uh5uka4/edit#heading=h.lscc0hy99b7q">here</a>. Please read Sections 1 and 2, and choose at least 2 other sections to read in-depth. Skimming the rest is ok. </li>
+                </ol>
+            </td>
+            <td>Responses by 9am (1 paragraph is ok)</td>
+        </tr>
+
+        <tr>
+            <td>Tue Nov 14</td>
+            <td>Social Impact: Policing</td>
+            <td>
+                <ol>
+                    <li><a href="https://www.pnas.org/doi/abs/10.1073/pnas.1702413114">Rob Voigt et al. Language from police body camera footage shows racial disparities in officer respect. PNAS 2017</a></li>
+                    <li><a href="https://dl.acm.org/doi/10.1145/3593013.3594020">Matt Franchi et al. Detecting disparities in police deployments using dashcam data. FAccT 2023</a></li>
+                </ol>
+            </td>
+            <td>Responses by 9am</td>
+        </tr>
+
+
+        <tr>
+            <td>Thu Nov 16</td>
+            <td>Social Impact: Healthcare</td>
+            <td>
+                <ol>
+                    <li><a href="https://www.nature.com/articles/s41591-020-01192-7">Emma Pierson et al. An algorithmic approach to reducing unexplained pain disparities in underserved populations. Nature Medicine 2021</a></li>
+                    <li><a href="https://pubmed.ncbi.nlm.nih.gov/33479160/">Wolf et al. The SEE Study: Safety, Efficacy, and Equity of Implementing Autonomous Artificial Intelligence for Diagnosing Diabetic Retinopathy in Youth. Diabetes Care. 2021.</a> [Read just the first few paragraphs before the "RESEARCH DESIGN AND METHODS" section. This is to provide some additional context for #3]</li>
+                <li><a href="https://diabetesjournals.org/clinical/article/doi/10.2337/cd23-0019/153640/Clinical-Implementation-of-Autonomous-Artificial">
+                      Wolf et al. Clinical Implementation of Autonomous Artificial Intelligence Systems for Diabetic Eye Exams: Considerations for Success. Practical Pointers. 2023</li>
+                </ol>
+            </td>
+            <td>Responses by 9am</td>
+        </tr>
+
+        <tr>
+            <td>Tue Nov 21</td>
+            <td>Fall Recess</td>
+            <td>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Thu Nov 23</td>
+            <td>Fall Recess</td>
+            <td>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Tue Nov 28</td>
+            <td>Social Impact: ChatGPT and Disinformation</td>
+            <td>
+                <ol>
+                <li><a href="https://arxiv.org/abs/2304.11215">Alejo José G. Sison et al. ChatGPT: More Than a “Weapon of Mass Deception” Ethical Challenges and Responses from the Human-Centered Artificial Intelligence (HCAI) Perspective. International Journal of Human–Computer Interaction. 2023</a></li>
+                </ol>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Thu Nov 30</td>
+            <td></td>
+            <td>
+                No class
+            </td>
+        </tr>
+
+        <tr>
+            <td>Tue Dec 5</td>
+            <td>Social Impact: System Automation [<a href="files/1205.AutonomousWeapons.pdf">slides</a>]</td>
+            <td>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Thu Dec 7</td>
+            <td>Project Presentations</td>
+            <td>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="container sec" id="conduct">
+    <h2>Policies</h2>
+    <p><b>Attendance policy</b>
+    This is a graduate-level course revolving around in-person discussion. Students are expected to attend class and may notify
+    instructors if there are extenuating circumstances.
+
+    <p><b>Course Conduct</b>
+        This is a discussion class focused on controversial topics. All students are expected to respect everyone's perspective and input
+        and to contribute towards creating a welcoming and inclusive climate.
+        We the instructors will strive to make this classroom an inclusive space for all students, and we welcome feedback
+        on ways to improve.
+    </p>
+    <p>
+        <b>Academic Integrity</b>
+        This course will have a zero-tolerance philosophy regarding <a
+            href="https://www.cs.jhu.edu/academic-programs/academic-integrity-code/">plagiarism or other forms of
+        cheating</a>, and incidents
+        of academic dishonesty will be reported. A student who has doubts about how the Honor Code applies to this
+        course should obtain specific guidance from the course instructor before submitting the respective assignment.
+    </p>
+    <p>
+        <b>Discrimination and Harrasment</b>
+        The Johns Hopkins University is committed to equal opportunity for its faculty, staff, and students.
+        To that end, the university does not discriminate on the basis of sex, gender, marital status, pregnancy, race, color, ethnicity, national origin, age, disability, religion, sexual orientation, gender identity or expression, veteran status, military status, immigration status or other legally protected characteristic.
+        The University's <a href="https://oie.jhu.edu/policies-and-laws/JHU-Discrimination-and-Harassment-Policy-and-Procedures-7.1.21-Present">Discrimination and Harassment Policy and Procedures</a> provides information on how to report or file a complaint of discrimination or harassment based on any of the protected statuses listed in the earlier sentence, and the University’s prompt and equitable response to such complaints.
+    </p>
+
+    <p>
+        <b>Personal Well-being</b>
+        Take care of yourself! Being a student can be challenging and your physical and mental health is important. If you need support,
+        please seek it out. Here are several of the many helpful resources on campus:
+        <ul>
+            <li><a href="https://studentaffairs.jhu.edu/student-health/">Student Health and Wellness Center</a></li>
+            <li><a href="https://studentaffairs.jhu.edu/counselingcenter/">JHU Counseling Center</a></li>
+            <li><a href="http://web.jhu.edu/disabilities/">JHU Office for Student Disability Services</a></li>
+            <li><a href="https://studentaffairs.jhu.edu/student-life/student-outreach-support/">Student Outreach & Support</a></li>
+        </ul>
+    </p>
+</div>
+
+
+
+<!-- jQuery and Bootstrap -->
+<script src="../files/jquery.min.js"></script>
+<script src="../files/bootstrap.min.js"></script>
+
+
+</body>
+</html>
